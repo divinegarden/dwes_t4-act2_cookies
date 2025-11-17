@@ -3,8 +3,9 @@ import { redirect } from "next/navigation";
 import { deleteCookie, setCookie } from "@/lib/cookies";
 
 const usuarios = [
-  { nombre: 'pepe', key: 'pepe' },
-  { nombre: 'ana', key: 'ana' },
+  { nombre: 'mjimolm280', email: 'thisisanexample@example.com', key: 'iamtestingthisactivity' },
+  { nombre: 'test_1', email: 'test@gmail.com', key: 'thisisanactivity' },
+  { nombre: 'testaccount', email: 'testingtest@hotmail.com', key: 'imtesting' }
 ]
 
 export async function login(formData) {
@@ -18,7 +19,7 @@ export async function login(formData) {
 
   // Comprobar si credenciales son válidas
   // const authenticated = true  // suponemos que son válidas
-  const encontrado = usuarios.find(usuario => name == usuario.nombre && key == usuario.key)
+  const encontrado = usuarios.find(usuario => name == usuario.nombre && email == usuario.email && key == usuario.key)
 
   if (!encontrado) return
 
@@ -32,7 +33,7 @@ export async function login(formData) {
 
 export async function logout() {
   // Eliminamos cookie de sesión
-  deleteCookie('session')
+  await deleteCookie('session')
 
   // redirect("/");   // No recarga si ya estamos en esta página
 
