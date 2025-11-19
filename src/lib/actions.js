@@ -3,7 +3,6 @@ import { redirect } from "next/navigation";
 import { deleteCookie, setCookie } from "@/lib/cookies";
 
 const usuarios = [
-  { nombre: 'mjimolm280', email: 'thisisanexample@example.com', key: 'iamtestingthisactivity' },
   { nombre: 'test_1', email: 'test@gmail.com', key: 'thisisanactivity' },
   { nombre: 'testaccount', email: 'testingtest@hotmail.com', key: 'imtesting' }
 ]

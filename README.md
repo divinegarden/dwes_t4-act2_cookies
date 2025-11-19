@@ -21,8 +21,9 @@ Para iniciar sesión puedes usar las siguientes credenciales:
 
 |            | usuario1 | usuario2 |
 | ---------- | -------- | -------- |
-| Nombre     | **pepe** | **ana**  |
-| Contraseña | **pepe** | **ana**  |
+| Nombre     | **test_1** | **testaccount**  |
+| Correo     | **test@gmail.com** | **testingtest@hotmail.com**  |
+| Contraseña | **thisisanactivity** | **imtesting**  |
 
 
 
